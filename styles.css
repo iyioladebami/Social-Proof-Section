@@ -1,0 +1,118 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+section.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+    align-items: center;
+}
+div.top{
+    margin-top: -1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(bg-pattern-top-desktop.svg);
+    
+    color:hsl(300, 43%, 22%) ;
+    padding:4em 7em;
+    
+    width: 100%;
+    
+}
+div.opener,div.ratings{display: flex;
+flex-direction: column;
+justify-content: center;
+min-width: 250px;}
+
+div.opener h1{font-size: 3em;
+    max-width: 350px;
+}
+div.opener p{
+  max-width: 400px;
+}
+div.ratings p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(300, 24%, 96%);
+    padding: 1em;
+    border-radius: 0.2em;
+    font-weight: bold;
+}
+div.ratings img{
+    padding-right: 0.5em;
+}
+.p2{
+    transform: translateX(2em);
+}
+.p3{
+    transform: translateX(4em);
+}
+div.bottom{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background: url(bg-pattern-bottom-desktop.svg);
+    background-size: contain;
+    margin-bottom: 3em;
+    width: 100%;
+
+}
+.slide1,.slide2,.slide3{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.2em;
+    flex-grow: 1;
+    aspect-ratio: 3/1;
+    padding: 1em;
+    padding-bottom: auto;
+    padding-top: auto;
+    margin-bottom: 1em;
+    max-width: 300px;
+    min-width: 300px;
+    
+   
+    }
+div.image{
+    display: flex;
+    align-items: center;
+    }
+div.imgtext{padding-left: 1em;
+}
+div.image img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+.white{
+    color: white;
+}
+.pink{
+    color: hsl(333, 80%, 67%);
+}
+p.white{font-size: 1em;}
+div.p2{
+transform: translateY(2em);
+}
+div.p3{transform: translateY(4em);}
+@media(max-width:550px){
+    .p2,.p3{transform: none;}
+    div.top{padding: 4em;}
+}
+@media(max-width:1033px){
+    div.top{justify-content: center;}
+    .p2,.p3{transform: none;}
+}
